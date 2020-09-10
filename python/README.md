@@ -11,6 +11,7 @@ If you have any trouble with the following steps, please contact the repository 
 1. Navigate to a subject example notebook (these end in .ipynb) and open it
 2. Click the link at the top of the notebook to open Google Colab
 3. If the notebook fails to load, click the 'raw' to open a plain text view and copy the link near the top that begins `https://colab.research` and ends `.ipynb`
+4. If the notebook requires resources, you will need to find them in the GitHub repository, click 'raw', right-click to save the file locally, and then upload this to Colab. This is the same process as described in session eight of the course
 
 ### Option 2: Running the Notebooks Locally
 
@@ -22,7 +23,7 @@ If you have any trouble with the following steps, please contact the repository 
 
 1. (Windows only) If you have Windows Home installed (rather than Windows Education/Pro), upgrade using the [free copy the University of Warwick provides](https://warwick.ac.uk/services/its/servicessupport/software/microsoft/windows10student)
 2. Install [Docker](https://docs.docker.com/engine/install/) and run it
-3. Open a terminal (Linux/OSX)/PowerShell prompt (Windows) in the `python` directory of the repositiory. On Windows, you can shift-click the `python` directory to do this
+3. Open a terminal (Linux/OSX)/PowerShell prompt (Windows) in the `python` directory of the repository. On Windows, you can shift-click the `python` directory to do this
 4. Run `docker build -t subject-examples-python .` to build the necessary image. You only ever have to do this once
 5. Each time you want to launch the notebooks, run `docker run -it -p 8888:8888 -v <path>:/home/jovyan/notebooks se-python` replacing `<path>` with `$PWD` on Linux/OSX, `${PWD}` on Windows (PowerShell), and `%cd%` on Windows (Command Prompt)
 6. An web address starting `http://127.0.0.1:8888` will appear. Copy this into your browser
