@@ -1,3 +1,7 @@
+# Python Subject Examples
+
+_This directory contains small example notebooks, showcasing the amazing applications of the content taught in Warwick Data Science Society's Beginners' Python course._
+
 ## Running the Code
 
 If you have any trouble with the following steps, please contact the repository maintainer, Tim Hargreaves, or reach out at [teaching@warwickdatascience.com](mailto:teaching@warwickdatascience.com).
